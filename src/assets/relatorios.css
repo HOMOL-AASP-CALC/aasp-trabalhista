@@ -1,0 +1,78 @@
+
+h2 {
+    color: #2c3e50;
+}
+
+input {
+    /* text-align: right; */
+    border: 1px solid #eee;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+select {
+    text-align: left;
+    border: 1px solid #eee;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.tabela {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-collapse: collapse;
+}
+
+.tabela td {
+     border: 1px solid #efefef;
+     border-collapse: collapse;
+     padding: 5px;
+     vertical-align: top;
+     text-align: center;
+     color: #2c3e50;
+}
+
+.tabela th {
+     border: 1px solid #efefef;
+     border-collapse: collapse;
+     padding: 5px;
+     vertical-align: top;
+     text-align: center;
+     background-image: linear-gradient(#FFF, #EEE);
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.tabela input {
+    text-align: right;
+    border: 1px solid #eee;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.iconeModal {
+    cursor: pointer;
+}
+
+.relatorioForma {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    text-align: left;
+}
+
+.alinharEsquerda {
+    text-align: left !important;
+}
+
+.modal_div_principal {
+    text-align:left; 
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 2;
+}

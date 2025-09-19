@@ -1,0 +1,26 @@
+
+
+1a conversão
+
+inss2
+ipca_e
+irrf
+poupanca
+salario_familia
+salario_minimo
+seguro_desemprego
+selic_perc
+tabelas_trabalhistas
+trab_anexos
+
+
+mysqldump -uroot -p debit inss2 ipca_e irrf poupanca salario_familia salario_minimo seguro_desemprego selic_perc tabelas_trabalhistas trab_anexos > primeira_vez.sql
+
+
+
+2a conversão
+
+mysqldump -uroot -psimples123 debit  inss2 ipca_e irrf poupanca salario_familia salario_minimo seguro_desemprego selic_perc tabelas_trabalhistas  > proximas_vez.sql
+mysql -uroot -psimples123 debit-trabalhista < proximas_vez.sql
+
+
