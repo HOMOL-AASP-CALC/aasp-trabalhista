@@ -13,6 +13,8 @@ function alterarUrl(novoId) {
   window.history.pushState({path: novaUrl}, '', novaUrl);
 } 
 
+// console.log('process.env.VUE_APP_SERVIDOR', process.env.VUE_APP_SERVIDOR)
+
 export default new Vuex.Store({
   state: {
     idCalc: 0,
@@ -23,6 +25,7 @@ export default new Vuex.Store({
     hostWWW: process.env.VUE_APP_SERVIDOR_WWW,
     hostLegacy: process.env.VITE_APP_SERVIDOR_LEGACY,
     hostAPIGeral: process.env.VUE_APP_SERVIDOR_API_GERAL, 
+    hostSOCKET: process.env.VUE_APP_SOCKET,
     grupoAtual: 'inicio',
     grupoList: [],
     primeiraVez: true,  // essa variavel existe para nao passar para frente logo na primeira vez que carrega o calc 

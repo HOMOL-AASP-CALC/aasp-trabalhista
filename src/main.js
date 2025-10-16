@@ -41,13 +41,19 @@ library.add(faBug)
 Vue.component('font-awesome-icon', FontAwesomeIcon) 
 Vue.config.productionTip = false
 
-// console.log('process.env.VUE_APP_SERVIDOR - a - ',process.env.VUE_APP_SERVIDOR)
 
-// if (process.env.VUE_APP_SERVIDOR == 'https://api.debit.com.br/t') {
-//   Vue.prototype.$socket = io(process.env.VUE_APP_SERVIDOR, { transports : ['websocket'], path: "/t/" });
-// } else {
-  Vue.prototype.$socket = io(process.env.VUE_APP_SERVIDOR, { transports : ['websocket'] });
-// }
+Vue.prototype.$socket = io(process.env.VUE_APP_SOCKET, 
+  { transports : ['websocket'], 
+    withCredentials: true, 
+    path: '/trabalhistasocket', 
+    secure: false,
+    port: "80" 
+  });
+// Vue.prototype.$socket = io(process.env.VUE_APP_SERVIDOR, { transports : ['websocket'], path: '/trabalhista-s' });
+
+
+Vue.prototype.$socket.on("connect_error", (err) => console.error("l:49 connect_error", err.message));
+Vue.prototype.$socket.on("error", (err) => console.error("l:50 error", err));
 
 
 import './assets/relatorios.css' 
