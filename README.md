@@ -1,19 +1,78 @@
-# debit-trabalhista
+# Vue 3 + Vite
 
-## Project setup
-```
-npm install
+Este projeto é um template para iniciar aplicações com **Vue 3** usando **Vite**. Ele já vem configurado para trabalhar com **Single File Components (SFC)** e o modo **`<script setup>`**, que simplifica a escrita de componentes.
+
+A seguir está um passo a passo completo de instalação, execução e estrutura básica.
+
+## ✅ Pré-requisitos
+
+Antes de começar, verifique se você tem instalado:
+
+- **Node.js** (recomendado: versão LTS)
+- **npm** (vem junto com o Node) ou **yarn/pnpm**
+
+Para verificar se está tudo instalado, rode:
+
+```bash
+node -v
+npm -v
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+## 📦 Instalação do projeto
+
+1. **Clone ou baixe o repositório**
+    ```bash
+    git clone https://github.com/debitcombr/aasp-atualiza 
+    cd aasp-atualiza
+    ```
+
+2. **Instale as dependências**
+    ```bash
+    npm install
+    ```
+    > Isso baixa todas as bibliotecas necessárias listadas no `package.json`.
+
+## ▶️ Executando em modo de desenvolvimento
+
+Para iniciar o servidor local com hot reload:
+
+```bash
+npm run dev
 ```
 
-### Compiles and minifies for production
+O Vite vai informar uma URL local, geralmente:
+
 ```
+http://localhost:8085
+```
+
+Sempre que você salvar um arquivo, o navegador será atualizado automaticamente.
+
+## 🏗️ Build para produção
+
+Para gerar os arquivos otimizados:
+
+```bash
 npm run build
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Os arquivos finais ficam na pasta `dist/`.
+
+## Configuração
+
+Crie um arquivo `.env` na raiz do projeto definindo as variáveis de ambiente utilizadas. Segue um exemplo de configuração:
+
+```ini
+
+
+VUE_APP_SERVIDOR_WWW=http://mat.aasp.org
+VUE_APP_SERVIDOR="http://t-api.aasp.org/trabalhista-w"
+VUE_APP_SERVIDOR_API_GERAL=http://api.aasp.org
+VUE_APP_FRONT=http://app.aasp.org
+VUE_APP_SOCKET=http://t-api.fastbet.win
+
+
+
+
+```
+
