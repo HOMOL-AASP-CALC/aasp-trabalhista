@@ -11,6 +11,7 @@ Antes de começar, verifique se você tem instalado:
 - **Node.js** (recomendado: versão LTS)
 - **npm** (vem junto com o Node) ou **yarn/pnpm**
 
+Usaremos a versão v16.20.2 do nodejs.
 Para verificar se está tudo instalado, rode:
 
 ```bash
@@ -22,8 +23,8 @@ npm -v
 
 1. **Clone ou baixe o repositório**
     ```bash
-    git clone https://github.com/debitcombr/aasp-atualiza 
-    cd aasp-atualiza
+    git clone https://github.com/debitcombr/aasp-trabalhista 
+    cd aasp-trabalhista
     ```
 
 2. **Instale as dependências**
@@ -37,13 +38,13 @@ npm -v
 Para iniciar o servidor local com hot reload:
 
 ```bash
-npm run dev
+npm run serve
 ```
 
 O Vite vai informar uma URL local, geralmente:
 
 ```
-http://localhost:8085
+http://localhost:8080
 ```
 
 Sempre que você salvar um arquivo, o navegador será atualizado automaticamente.
