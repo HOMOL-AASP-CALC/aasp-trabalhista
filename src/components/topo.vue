@@ -127,7 +127,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        <a class="nav-link" target="_blank" href="https://api.whatsapp.com/message/GSVKJJLREHYDO1?autoload=1&app_absent=0" style="font-size:16px;">WhatsApp
+                        <a class="nav-link" target="_blank" href="https://wa.me/5511941180516" style="font-size:16px;">WhatsApp
                         </a>
                     </li>
 
